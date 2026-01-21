@@ -1,0 +1,23 @@
+# RRB Staff Nurse Exam Authority Portal
+
+User-agent: *
+Allow: /
+
+# Site Identity
+Name: RRB Staff Nurse Exam Portal
+Description: The definitive authority hub for RRB Staff Nurse and Nursing Superintendent recruitment. We provide official notifications, syllabus, eligibility criteria, and preparation strategies.
+URL: https://rrbstaffnurse.in
+
+# Core Content & Navigation
+- Notification: https://rrbstaffnurse.in/rrb-staff-nurse-notification
+- Syllabus: https://rrbstaffnurse.in/rrb-staff-nurse-syllabus
+- Exam Date: https://rrbstaffnurse.in/rrb-staff-nurse-exam-date
+- Eligibility: https://rrbstaffnurse.in/rrb-staff-nurse-eligibility
+- Previous Year Papers: https://rrbstaffnurse.in/blog/rrb-staff-nurse-previous-year-questions
+
+# Purpose
+This website is an informational resource for nursing aspirants preparing for Indian Railway exams. It structures complex government notifications into easy-to-read formats.
+
+# Contact
+Owner: RRB Staff Nurse Portal Team
+Contact: contact@rrbstaffnurse.in
