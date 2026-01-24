@@ -1,26 +1,16 @@
-// Utility to generate structured data (JSON-LD)
-
 export const generateOrganizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "RRB Staff Nurse Exam Portal",
+  "name": "RRB Staff Nurse Portal",
   "url": "https://rrbstaffnurse.in",
   "logo": "https://rrbstaffnurse.in/logo.png",
-  "sameAs": [
-    "https://facebook.com/rrbstaffnurse",
-    "https://twitter.com/rrbstaffnurse"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "contact@rrbstaffnurse.in",
-    "contactType": "customer support"
-  }
+  "sameAs": ["https://facebook.com/nprep", "https://twitter.com/nprep"]
 });
 
 export const generateWebsiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "RRB Staff Nurse Exam Portal",
+  "name": "RRB Staff Nurse Exam Prep",
   "url": "https://rrbstaffnurse.in",
   "potentialAction": {
     "@type": "SearchAction",
@@ -40,6 +30,18 @@ export const generateBreadcrumbSchema = (items: { name: string; item: string }[]
   }))
 });
 
+export const generateArticleSchema = (headline: string, description: string, datePublished: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": headline,
+  "description": description,
+  "datePublished": datePublished,
+  "author": {
+    "@type": "Organization",
+    "name": "RRB Staff Nurse Portal Team"
+  }
+});
+
 export const generateFAQSchema = (faqs: { question: string; answer: string }[]) => ({
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -51,32 +53,4 @@ export const generateFAQSchema = (faqs: { question: string; answer: string }[]) 
       "text": faq.answer
     }
   }))
-});
-
-export const generateArticleSchema = (
-  title: string, 
-  description: string, 
-  datePublished: string, 
-  authorName: string = "RRB Staff Nurse Team",
-  image: string = "https://rrbstaffnurse.in/og-image.jpg"
-) => ({
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": title,
-  "description": description,
-  "image": image,
-  "author": {
-    "@type": "Organization",
-    "name": authorName
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "RRB Staff Nurse Exam Portal",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://rrbstaffnurse.in/logo.png"
-    }
-  },
-  "datePublished": datePublished,
-  "dateModified": datePublished
 });
