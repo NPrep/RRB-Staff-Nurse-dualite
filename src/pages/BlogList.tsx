@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogContent';
 import SEOHead from '../components/SEOHead';
@@ -34,7 +35,6 @@ export default function BlogList() {
                     {post.title}
                   </Link>
                 </h2>
-                {/* Excerpt Removed as per request */}
                 <div className="mt-auto pt-4 border-t border-gray-100">
                    <Link 
                     to={`/blog/${post.slug}`} 

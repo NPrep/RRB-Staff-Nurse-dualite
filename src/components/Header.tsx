@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, TrainFront } from 'lucide-react';
-import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function Header() {
     { name: 'Courses', path: '/courses' },
     { name: 'Notification', path: '/rrb-staff-nurse-notification' },
     { name: 'Syllabus', path: '/rrb-staff-nurse-syllabus' },
-    { name: 'PYQs', path: '/free-tests' }, // Renamed from 'Free Tests' to 'PYQs'
+    { name: 'PYQs', path: '/free-tests' },
     { name: 'Blogs', path: '/blog' },
   ];
 
@@ -21,8 +21,6 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      {/* Top Bar Removed as per request */}
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}

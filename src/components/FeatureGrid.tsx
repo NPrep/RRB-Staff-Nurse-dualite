@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, FileText, Bell, ClipboardCheck } from 'lucide-react';
 

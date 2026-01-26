@@ -4,19 +4,59 @@
 
 @layer components {
   .govt-table {
-    @apply w-full border-collapse border border-gray-200 text-sm text-left;
+    @apply w-full border-collapse border border-gray-200 text-sm text-left mb-6;
   }
   .govt-table th {
     @apply bg-slate-100 text-slate-900 font-bold p-3 border border-gray-200;
   }
   .govt-table td {
-    @apply p-3 border border-gray-200 text-slate-700;
+    @apply p-3 border border-gray-200 text-slate-700 align-top;
   }
   .govt-table tr:nth-child(even) {
     @apply bg-slate-50;
   }
   .govt-table tr:hover {
     @apply bg-red-50;
+  }
+
+  /* SEO Blog Specific Styles */
+  .blog-callout {
+    @apply p-6 my-8 rounded-lg border-l-4 shadow-sm;
+  }
+  .blog-callout-summary {
+    @apply bg-blue-50 border-blue-500 text-slate-800;
+  }
+  .blog-callout-mistake {
+    @apply bg-red-50 border-red-500 text-slate-800;
+  }
+  
+  .blog-toc {
+    @apply bg-slate-50 p-6 rounded-xl border border-gray-200 mb-10 shadow-sm;
+  }
+  .blog-toc ul {
+    @apply list-none pl-0 space-y-2 mt-2;
+  }
+  .blog-toc a {
+    @apply text-slate-600 hover:text-rrb-red hover:underline text-sm font-medium transition-colors;
+  }
+  
+  /* Step-by-step styling */
+  .step-card {
+    @apply flex gap-4 mb-6 p-4 rounded-lg hover:bg-slate-50 transition-colors border border-transparent hover:border-gray-100;
+  }
+  .step-number {
+    @apply flex-shrink-0 w-8 h-8 rounded-full bg-rrb-red text-white flex items-center justify-center font-bold text-sm shadow-sm;
+  }
+  
+  /* Glossary Styling */
+  .glossary-item {
+    @apply bg-gray-50 p-4 rounded-lg border border-gray-200;
+  }
+  .glossary-dt {
+    @apply font-bold text-slate-900 block mb-1;
+  }
+  .glossary-dd {
+    @apply text-sm text-slate-600 m-0 leading-relaxed;
   }
 }
 
