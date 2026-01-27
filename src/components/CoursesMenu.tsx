@@ -2,6 +2,7 @@ import { CheckCircle, Star, Zap } from 'lucide-react';
 
 interface Course {
   title: string;
+  link: string;
   exams?: string;
   icon: React.ElementType;
   features: string[];
@@ -12,6 +13,7 @@ export default function CoursesMenu() {
   const courses: Course[] = [
     {
       title: "Test Series",
+      link: "https://qtestseries.nprep.in",
       icon: CheckCircle,
       features: [
         "30,000+ Questions - QBank (Topic Wise)",
@@ -24,6 +26,7 @@ export default function CoursesMenu() {
     },
     {
       title: "Rapid Revision 2.0",
+      link: "https://rapid.nprep.in",
       exams: "RRB / NORCET / CHO / BTSC / KGMU - All Covered",
       icon: Zap,
       features: [
@@ -36,6 +39,7 @@ export default function CoursesMenu() {
     },
     {
       title: "GOLD",
+      link: "https://gold.nprep.in",
       exams: "RRB / NORCET 10 & 11 / CHO / BTSC / KGMU - All Covered",
       icon: Star,
       highlight: true,
@@ -89,7 +93,7 @@ export default function CoursesMenu() {
 
               <div className="mt-5 pt-4 border-t border-gray-100/50">
                 <a 
-                  href="https://nprep.in" 
+                  href={course.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={`

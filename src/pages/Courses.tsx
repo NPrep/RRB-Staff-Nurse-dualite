@@ -8,6 +8,7 @@ export default function Courses() {
   const courses = [
     {
       title: "Test Series",
+      link: "https://qtestseries.nprep.in",
       icon: CheckCircle,
       features: [
         "30,000+ Questions - QBank (Topic Wise)",
@@ -20,6 +21,7 @@ export default function Courses() {
     },
     {
       title: "Rapid Revision 2.0",
+      link: "https://rapid.nprep.in",
       exams: "RRB / NORCET / CHO / BTSC / KGMU - All Covered",
       icon: Zap,
       features: [
@@ -32,6 +34,7 @@ export default function Courses() {
     },
     {
       title: "GOLD",
+      link: "https://gold.nprep.in",
       exams: "RRB / NORCET 10 & 11 / CHO / BTSC / KGMU - All Covered",
       icon: Star,
       highlight: true,
@@ -108,7 +111,7 @@ export default function Courses() {
 
               <div className="mt-auto">
                 <a 
-                  href="https://nprep.in" 
+                  href={course.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={`
