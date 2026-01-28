@@ -88,7 +88,21 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} RRBStaffNurse.in. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p>&copy; {new Date().getFullYear()} RRBStaffNurse.in. All rights reserved.</p>
+            <span className="hidden md:inline text-slate-700">|</span>
+            <p className="flex items-center gap-1">
+              In association with{' '}
+              <a 
+                href="https://nprep.in" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-bold text-slate-400 hover:text-white transition-colors"
+              >
+                NPrep
+              </a>
+            </p>
+          </div>
           <div className="flex space-x-4 mt-4 md:mt-0">
              <span>Designed for Aspirants</span>
           </div>
