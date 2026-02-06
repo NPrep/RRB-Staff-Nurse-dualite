@@ -4,6 +4,7 @@ import SEOHead from '../components/SEOHead';
 import FeatureGrid from '../components/FeatureGrid';
 import SEONursingContent from '../components/SEONursingContent';
 import ReviewMarquee from '../components/ReviewMarquee';
+import NPrepCTA from '../components/NPrepCTA';
 import { ArrowRight, FileText, Calendar, BookOpen } from 'lucide-react';
 import { generateOrganizationSchema, generateWebsiteSchema } from '../utils/schema';
 
@@ -14,8 +15,8 @@ export default function Home() {
   return (
     <>
       <SEOHead 
-        title="RRB Staff Nurse Exam 2025 - Notification, Syllabus & Prep" 
-        description="Official guide for RRB Staff Nurse Exam 2025. Get latest notification, exam dates, syllabus, eligibility, and preparation strategy for Railway Nursing jobs." 
+        title="RRB Staff Nurse Exam 2025 - Apply Online, Admit Card & Result" 
+        description="Official portal guide for RRB Staff Nurse Exam 2025. Direct links to Apply Online, Download Admit Card, Check Results, and view latest Notification." 
         canonicalUrl="/" 
         schema={[orgSchema, webSchema]}
       />
@@ -35,23 +36,22 @@ export default function Home() {
 
         <div className="relative z-10 py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            {/* Exam Date Box Removed */}
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight drop-shadow-sm">
               RRB Staff Nurse Exam <br/>
-              <span className="text-red-100">Notification, Syllabus & Preparation</span>
+              <span className="text-red-100">Application, Admit Card & Results</span>
             </h1>
             <p className="text-lg md:text-xl text-red-50 mb-8 font-medium leading-relaxed drop-shadow-sm">
-              The definitive authority hub for Indian Railways Staff Nurse & Nursing Superintendent recruitment. Access official updates, eligibility criteria, and expert study resources.
+              The definitive authority hub for Indian Railways Staff Nurse recruitment. Access direct application links, hall tickets, and merit lists.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/rrb-staff-nurse-notification" className="bg-white text-rrb-red px-6 py-3 rounded-md font-bold hover:bg-red-50 transition-colors shadow-lg shadow-red-900/20 no-underline">
-                Download Notification
+              <Link to="/rrb-staff-nurse-application-form" className="bg-white text-rrb-red px-6 py-3 rounded-md font-bold hover:bg-red-50 transition-colors shadow-lg shadow-red-900/20 no-underline">
+                Apply Online
               </Link>
               <Link 
-                to="/rrb-staff-nurse-syllabus" 
-                className="bg-white text-rrb-red px-6 py-3 rounded-md font-bold transition-colors shadow-lg shadow-red-900/20 no-underline hover:bg-white hover:text-rrb-red"
+                to="/rrb-staff-nurse-notification" 
+                className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-bold transition-colors hover:bg-white hover:text-rrb-red no-underline"
               >
-                View Syllabus
+                Download Notification
               </Link>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
-        {/* New 4-Block Feature Grid */}
+        {/* New Focus: Apply, Admit, Result, Syllabus */}
         <FeatureGrid />
 
         <div className="flex flex-col lg:flex-row gap-8 mt-12">
@@ -74,33 +74,22 @@ export default function Home() {
                 The <strong>RRB Staff Nurse Exam</strong> is the premier gateway for nursing professionals to join the Indian Railways. With high job security and Level-7 Pay Scale, it is the ultimate career goal for thousands.
               </p>
               <p>
-                This portal serves as your comprehensive guide. We provide verified data on CEN (Centralized Employment Notice), exam dates, and result announcements directly from Railway Recruitment Boards.
+                This portal serves as your direct gateway. We simplify the process from <strong>Online Application</strong> to <strong>Final Result</strong>, ensuring you never miss a deadline.
               </p>
             </section>
 
-            {/* Latest Updates Section */}
+            {/* Latest Updates Section - Refined to avoid duplication */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-slate-800 mb-6 border-l-4 border-rrb-red pl-3 pb-0 border-b-0">
-                Latest Updates
+                Recruitment News
               </h2>
               <div className="grid gap-4">
                 <Link to="/rrb-staff-nurse-notification" className="group block bg-white border border-gray-200 rounded-lg p-5 hover:border-rrb-red hover:shadow-md transition-all no-underline">
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-2 py-1 text-xs font-semibold bg-red-100 text-red-800 rounded mb-2">Notification</span>
-                      <h3 className="text-lg font-bold text-slate-900 group-hover:text-rrb-red transition-colors mt-0">RRB Paramedical Staff Notification 2025</h3>
-                      <p className="text-sm text-slate-600 mt-1">Railway Board is prepping the CEN release. Check vacancy breakdown and zone-wise details.</p>
-                    </div>
-                    <ArrowRight className="text-gray-400 group-hover:text-rrb-red transition-colors" size={20} />
-                  </div>
-                </Link>
-
-                <Link to="/rrb-staff-nurse-syllabus" className="group block bg-white border border-gray-200 rounded-lg p-5 hover:border-rrb-red hover:shadow-md transition-all no-underline">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <span className="inline-block px-2 py-1 text-xs font-semibold bg-green-100 text-green-800 rounded mb-2">Syllabus</span>
-                      <h3 className="text-lg font-bold text-slate-900 group-hover:text-rrb-red transition-colors mt-0">Updated Exam Pattern & Syllabus 2025</h3>
-                      <p className="text-sm text-slate-600 mt-1">Master the 70/30 split. Professional Ability vs General Awareness strategy guide.</p>
+                      <h3 className="text-lg font-bold text-slate-900 group-hover:text-rrb-red transition-colors mt-0">CEN Paramedical Notification 2025</h3>
+                      <p className="text-sm text-slate-600 mt-1">Official PDF release expected soon. Check zone-wise vacancy distribution.</p>
                     </div>
                     <ArrowRight className="text-gray-400 group-hover:text-rrb-red transition-colors" size={20} />
                   </div>
@@ -160,21 +149,21 @@ export default function Home() {
               <h3 className="text-slate-800 font-bold text-base mb-4 border-l-4 border-rrb-red pl-2">Essential Links</h3>
               <ul className="space-y-3 list-none pl-0">
                 <li>
-                  <Link to="/rrb-staff-nurse-notification" className="flex items-center group no-underline">
-                    <FileText size={18} className="text-slate-400 mr-3 group-hover:text-rrb-red transition-colors" />
-                    <span className="text-slate-700 font-medium text-sm group-hover:text-rrb-red transition-colors">Notification PDF</span>
+                  <Link to="/rrb-staff-nurse-application-form" className="flex items-center group no-underline">
+                    <MousePointerClick size={18} className="text-slate-400 mr-3 group-hover:text-rrb-red transition-colors" />
+                    <span className="text-slate-700 font-medium text-sm group-hover:text-rrb-red transition-colors">Apply Online</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/rrb-staff-nurse-exam-date" className="flex items-center group no-underline">
-                    <Calendar size={18} className="text-slate-400 mr-3 group-hover:text-rrb-red transition-colors" />
-                    <span className="text-slate-700 font-medium text-sm group-hover:text-rrb-red transition-colors">Exam Date</span>
+                  <Link to="/rrb-staff-nurse-admit-card" className="flex items-center group no-underline">
+                    <ClipboardList size={18} className="text-slate-400 mr-3 group-hover:text-rrb-red transition-colors" />
+                    <span className="text-slate-700 font-medium text-sm group-hover:text-rrb-red transition-colors">Download Admit Card</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/rrb-staff-nurse-syllabus" className="flex items-center group no-underline">
-                    <BookOpen size={18} className="text-slate-400 mr-3 group-hover:text-rrb-red transition-colors" />
-                    <span className="text-slate-700 font-medium text-sm group-hover:text-rrb-red transition-colors">Syllabus & Pattern</span>
+                  <Link to="/rrb-staff-nurse-result" className="flex items-center group no-underline">
+                    <CheckCircle size={18} className="text-slate-400 mr-3 group-hover:text-rrb-red transition-colors" />
+                    <span className="text-slate-700 font-medium text-sm group-hover:text-rrb-red transition-colors">Check Result</span>
                   </Link>
                 </li>
               </ul>
@@ -182,6 +171,9 @@ export default function Home() {
 
           </div>
         </div>
+        
+        {/* Strong CTA Section */}
+        <NPrepCTA />
       </div>
 
       {/* Reviews Section */}

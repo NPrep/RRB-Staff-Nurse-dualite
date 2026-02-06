@@ -10,6 +10,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Courses from './pages/Courses';
 import FreeTests from './pages/FreeTests';
+import SuccessStories from './pages/SuccessStories';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/free-tests" element={<FreeTests />} />
+            <Route path="/success-stories" element={<SuccessStories />} />
 
             {/* Blog Routes */}
             <Route path="/blog" element={<BlogList />} />

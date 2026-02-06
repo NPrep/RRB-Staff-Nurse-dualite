@@ -1,35 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, FileText, Bell, ClipboardCheck } from 'lucide-react';
+import { FileText, ClipboardList, CheckCircle, MousePointerClick } from 'lucide-react';
 
 export default function FeatureGrid() {
   const features = [
     { 
-      title: 'Courses', 
-      icon: BookOpen, 
-      path: '/courses',
-      desc: 'Premium Prep Batches',
+      title: 'Apply Online', 
+      icon: MousePointerClick, 
+      path: '/rrb-staff-nurse-application-form',
+      desc: 'Direct Link & Steps',
       color: 'bg-blue-50 text-blue-600'
+    },
+    { 
+      title: 'Admit Card', 
+      icon: ClipboardList, 
+      path: '/rrb-staff-nurse-admit-card',
+      desc: 'Download Hall Ticket',
+      color: 'bg-yellow-50 text-yellow-600'
+    },
+    { 
+      title: 'Check Result', 
+      icon: CheckCircle, 
+      path: '/rrb-staff-nurse-result',
+      desc: 'Merit List PDF',
+      color: 'bg-green-50 text-green-600'
     },
     { 
       title: 'Syllabus', 
       icon: FileText, 
       path: '/rrb-staff-nurse-syllabus',
-      desc: 'Updated Exam Pattern',
-      color: 'bg-green-50 text-green-600'
-    },
-    { 
-      title: 'Notification', 
-      icon: Bell, 
-      path: '/rrb-staff-nurse-notification',
-      desc: 'Download PDF',
-      color: 'bg-yellow-50 text-yellow-600'
-    },
-    { 
-      title: 'PYQ & Tests', 
-      icon: ClipboardCheck, 
-      path: '/free-tests',
-      desc: 'Practice Papers',
+      desc: 'Latest Pattern',
       color: 'bg-purple-50 text-purple-600'
     },
   ];

@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const quickLinks = [
+    { name: 'Apply Online', path: '/rrb-staff-nurse-application-form' },
+    { name: 'Admit Card', path: '/rrb-staff-nurse-admit-card' },
+    { name: 'Result', path: '/rrb-staff-nurse-result' },
     { name: 'Notification', path: '/rrb-staff-nurse-notification' },
-    { name: 'Exam Date', path: '/rrb-staff-nurse-exam-date' },
-    { name: 'Syllabus', path: '/rrb-staff-nurse-syllabus' },
-    { name: 'Eligibility', path: '/rrb-staff-nurse-eligibility' },
   ];
 
-  const resultLinks = [
-    { name: 'Admit Card', path: '/rrb-staff-nurse-admit-card' },
+  const resourceLinks = [
+    { name: 'Syllabus', path: '/rrb-staff-nurse-syllabus' },
+    { name: 'Eligibility', path: '/rrb-staff-nurse-eligibility' },
     { name: 'Cut Off', path: '/rrb-staff-nurse-cut-off' },
-    { name: 'Result', path: '/rrb-staff-nurse-result' },
+    { name: 'Success Stories', path: '/success-stories' },
   ];
 
   const companyLinks = [
@@ -56,7 +57,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-4 mt-0">Resources</h3>
             <ul className="space-y-2 list-none pl-0 ml-0">
-              {resultLinks.map((link) => (
+              {resourceLinks.map((link) => (
                 <li key={link.path}>
                   <Link to={link.path} className="text-slate-300 hover:text-white hover:underline transition-all text-sm">
                     {link.name}
