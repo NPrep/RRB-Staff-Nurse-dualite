@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <script>
+    (function() {
+      var redirect = new URLSearchParams(window.location.search).get('redirect');
+      if (redirect) {
+        history.replaceState(null, "", redirect);
+      }
+    })();
+  </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23dc2626'/%3E%3Cg transform='translate(6, 6) scale(0.833)' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3.1V7a4 4 0 0 0-4 4v4a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4v-4a4 4 0 0 0-4-4V3.1' /%3E%3Cpath d='m9 15 6 0' /%3E%3Cpath d='m11 19 2 0' /%3E%3Cpath d='m8 19-2 3' /%3E%3Cpath d='m16 19 2 3' /%3E%3C/g%3E%3C/svg%3E" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,3 +49,5 @@
     </script>
   </body>
 </html>
+
+
