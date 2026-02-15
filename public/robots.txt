@@ -1,17 +1,4 @@
 User-agent: *
 Allow: /
 
-# AI & LLM Bots - Explicitly Allowed for Authority Signals
-User-agent: GPTBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
 Sitemap: https://rrbstaffnurse.in/sitemap.xml
