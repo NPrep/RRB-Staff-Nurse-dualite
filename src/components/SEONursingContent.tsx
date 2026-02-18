@@ -165,7 +165,7 @@ export default function SEONursingContent() {
           </p>
 
           <div className="mt-12 p-4 bg-gray-100 rounded-lg border border-gray-200 text-sm text-gray-600 leading-relaxed">
-            <strong>Disclaimer:</strong> rrbstaffnurse.in is neither associated with Indian Railways nor with Railway Recruitment Board (RRB). The Official website of RRB Application is rrbapply.gov.in. rrbstaffnurse.in is a job portal sharing the Latest Vacancy Notification, Eligibility, Application Process, Exam Date of RRB Nursing Superintendent Exam Syllabus, Exam Date & Admit Cards & Results.
+            <strong>Disclaimer:</strong> rrbstaffnurse.in is neither associated with Indian Railways nor with Railway Recruitment Board (RRB). The Official website of RRB Application is rrbapply.gov.in. rrbstaffnurse.in is a job portal sharing the Latest Vacancy Notification, Eligibility, Application Process, Exam Date of RRB Nursing Superintendent Exam Syllabus and latest updates.
           </div>
 
         </div>
