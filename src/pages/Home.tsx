@@ -14,19 +14,19 @@ export default function Home() {
 
   return (
     <>
-      <SEOHead 
-        title="RRB Staff Nurse Exam 2025 - Apply Online, Admit Card & Result" 
-        description="Official portal guide for RRB Staff Nurse Exam 2025. Direct links to Apply Online, Download Admit Card, Check Results, and view latest Notification." 
-        canonicalUrl="/" 
+      <SEOHead
+        title="RRB Staff Nurse Exam 2025 - Notification, Syllabus & Updates"
+        description="Official portal guide for RRB Staff Nurse Exam 2025. Get latest notification updates, syllabus, eligibility, and important exam dates."
+        canonicalUrl="/"
         schema={[orgSchema, webSchema]}
       />
 
       {/* Hero Section */}
       <div className="relative bg-rrb-red overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2070&auto=format&fit=crop" 
-            alt="Indian Railways Train Background" 
+          <img
+            src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2070&auto=format&fit=crop"
+            alt="Indian Railways Train Background"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-rrb-red via-red-800 to-red-900 opacity-90 mix-blend-multiply"></div>
@@ -36,31 +36,19 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white tracking-tight drop-shadow-sm">
             RRB Staff Nurse Exam
           </h1>
-          <p className="text-xl text-red-100 mb-10 font-medium max-w-2xl mx-auto">
-            The definitive authority hub for Indian Railways recruitment. Access direct application links, hall tickets, and merit lists.
+          <p className="text-xl text-red-100 mb-0 font-medium max-w-2xl mx-auto">
+            The definitive authority hub for Indian Railways recruitment. Access complete notifications, syllabus, eligibility, and latest exam updates.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/rrb-staff-nurse-application-form" className="bg-white text-rrb-red px-8 py-3 rounded-md font-bold hover:bg-red-50 transition-colors shadow-lg shadow-red-900/20 no-underline">
-              Apply Online
-            </Link>
-            <Link 
-              to="/rrb-staff-nurse-notification" 
-              className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-bold transition-colors hover:bg-white hover:text-rrb-red no-underline"
-            >
-              Download Notification
-            </Link>
-          </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        {/* Core Focus: Apply, Admit, Result */}
+
         <FeatureGrid />
 
         {/* Clean Layout - Removed Sidebar for less clutter */}
         <div className="mt-16 max-w-4xl mx-auto">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Latest Recruitment Updates</h2>
             <div className="w-16 h-1 bg-rrb-red mx-auto rounded-full"></div>
@@ -91,7 +79,7 @@ export default function Home() {
           </div>
 
         </div>
-        
+
         {/* Strong CTA Section */}
         <NPrepCTA />
       </div>

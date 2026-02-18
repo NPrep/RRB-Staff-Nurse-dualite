@@ -39,7 +39,7 @@ export const pillarPages: Record<string, PillarPageData> = {
             rows: [
               ["Recruitment Authority", "Railway Recruitment Boards (RRB)"],
               ["Post Name", "Staff Nurse, Nursing Superintendent"],
-              ["Exam Date", "10th March to 13th March 2025"],
+              ["Exam Date", "10th - 12th March 2025"],
               ["Mode of Application", "Online"],
               ["Selection Process", "CBT (Computer Based Test) + Document Verification"],
               ["Official Website", "indianrailways.gov.in"]
@@ -63,7 +63,7 @@ export const pillarPages: Record<string, PillarPageData> = {
       faqs: [
         {
           question: "When is the RRB Staff Nurse Exam 2025?",
-          answer: "The exam is scheduled to be held from 10th March to 13th March 2025."
+          answer: "The exam is scheduled to be held from 10th - 12th March 2025."
         },
         {
           question: "What is the age limit mentioned in the notification?",
@@ -182,7 +182,7 @@ export const pillarPages: Record<string, PillarPageData> = {
   "rrb-staff-nurse-exam-date": {
     slug: "/rrb-staff-nurse-exam-date",
     title: "RRB Staff Nurse Exam Date 2025",
-    description: "Check the latest RRB Staff Nurse Exam Date 2025. Stay updated on the CBT schedule and admit card release dates.",
+    description: "Check the latest RRB Staff Nurse Exam Date 2025. Stay updated on the latest CBT schedule and shift-wise updates.",
     h1: "RRB Staff Nurse Exam Date 2025 – CBT Schedule & Updates",
     content: {
       intro: "The RRB Staff Nurse Exam Date is a crucial milestone for aspirants. The exam is typically conducted in multiple shifts across the country.",
@@ -194,14 +194,13 @@ export const pillarPages: Record<string, PillarPageData> = {
             headers: ["Event", "Date"],
             rows: [
               ["Exam Start Date", "10th March 2025"],
-              ["Exam End Date", "13th March 2025"],
-              ["Admit Card Release", "4 days prior to exam date"]
+              ["Exam End Date", "12th March 2025"]
             ]
           }
         }
       ],
       faqs: [
-        { question: "When is the exam?", answer: "The exam is scheduled from 10th March to 13th March 2025." },
+        { question: "When is the exam?", answer: "The exam is scheduled from 10th - 12th March 2025." },
         { question: "Will the exam be in single shift?", answer: "No, due to the large number of applicants, it is usually conducted in multiple shifts." },
         { question: "When will the city intimation slip be released?", answer: "City intimation is usually released 10 days before the exam date." }
       ]
@@ -241,36 +240,7 @@ export const pillarPages: Record<string, PillarPageData> = {
       ]
     }
   },
-   "rrb-staff-nurse-admit-card": {
-    slug: "/rrb-staff-nurse-admit-card",
-    title: "RRB Staff Nurse Admit Card 2025 Download",
-    description: "Download RRB Staff Nurse Admit Card 2025. Direct link for Hall Ticket, exam city intimation, and shift timings.",
-    h1: "RRB Staff Nurse Admit Card 2025 – Download Hall Ticket",
-    content: {
-      intro: "The Admit Card is mandatory for entry into the examination hall. It is usually released 4 days prior to the CBT date.",
-      sections: [{ heading: "How to Download", content: "Visit your applied RRB website (e.g., indianrailways.gov.in), login with Registration Number and DOB, and download the E-Call Letter." }],
-      faqs: [
-        { question: "Will admit card be sent by post?", answer: "No, it is only available online." },
-        { question: "What ID proof is required with Admit Card?", answer: "Original valid photo ID like Aadhaar Card, Voter Card, PAN Card, etc." },
-        { question: "Can I change my exam center?", answer: "No, the exam center allotted by RRB is final." }
-      ]
-    }
-  },
-  "rrb-staff-nurse-cut-off": {
-    slug: "/rrb-staff-nurse-cut-off",
-    title: "RRB Staff Nurse Cut Off Marks (Previous Years)",
-    description: "Check RRB Staff Nurse Cut Off marks for previous years. Category-wise expected cut off for 2025 recruitment.",
-    h1: "RRB Staff Nurse Cut Off Marks – Previous Year & Expected",
-    content: {
-      intro: "Cut off marks vary by RRB zone and category. Understanding previous trends helps in setting a target score.",
-      sections: [{ heading: "Factors Affecting Cut Off", content: "Number of vacancies, difficulty level of exam, and number of candidates appearing." }],
-      faqs: [
-        { question: "Is there sectional cut off?", answer: "No, there is usually an overall qualifying mark (e.g., 40% for UR)." },
-        { question: "Does cut off vary by zone?", answer: "Yes, each RRB zone has its own cut off based on local competition and vacancies." },
-        { question: "When is the cut off released?", answer: "It is released along with the result." }
-      ]
-    }
-  },
+
   "rrb-staff-nurse-result": {
     slug: "/rrb-staff-nurse-result",
     title: "RRB Staff Nurse Result 2025 - Merit List",

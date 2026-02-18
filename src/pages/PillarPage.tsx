@@ -3,7 +3,7 @@ import { pillarPages } from '../data/pillarContent';
 import SEOHead from '../components/SEOHead';
 import QuickNavTable from '../components/QuickNavTable';
 import { generateBreadcrumbSchema, generateFAQSchema, generateArticleSchema } from '../utils/schema';
-import { BookOpen, FileText, Download, AlertCircle } from 'lucide-react';
+import { BookOpen, FileText, AlertCircle } from 'lucide-react';
 
 export default function PillarPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -160,13 +160,6 @@ export default function PillarPage() {
                   </section>
                 ))}
 
-                {/* Download CTA for Notification pages */}
-                <div className="mt-8 pt-8 border-t border-gray-100 flex justify-center">
-                   <button className="flex items-center space-x-2 text-slate-500 hover:text-rrb-red transition-colors font-medium text-sm">
-                      <Download size={16} />
-                      <span>Download Official PDF (Coming Soon)</span>
-                   </button>
-                </div>
               </div>
             </div>
           )}

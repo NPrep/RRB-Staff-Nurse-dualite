@@ -1,33 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, ClipboardList, CheckCircle, MousePointerClick } from 'lucide-react';
+import { FileText, CalendarDays, ShieldCheck, BellRing } from 'lucide-react';
 
 export default function FeatureGrid() {
   const features = [
-    { 
-      title: 'Apply Online', 
-      icon: MousePointerClick, 
-      path: '/rrb-staff-nurse-application-form',
-      desc: 'Direct Link & Steps',
+    {
+      title: 'Notification',
+      icon: BellRing,
+      path: '/rrb-staff-nurse-notification',
+      desc: 'Latest Official Update',
       color: 'bg-blue-50 text-blue-600'
     },
-    { 
-      title: 'Admit Card', 
-      icon: ClipboardList, 
-      path: '/rrb-staff-nurse-admit-card',
-      desc: 'Download Hall Ticket',
+    {
+      title: 'Exam Date',
+      icon: CalendarDays,
+      path: '/rrb-staff-nurse-exam-date',
+      desc: '10th - 12th March',
       color: 'bg-yellow-50 text-yellow-600'
     },
-    { 
-      title: 'Check Result', 
-      icon: CheckCircle, 
-      path: '/rrb-staff-nurse-result',
-      desc: 'Merit List PDF',
+    {
+      title: 'Eligibility',
+      icon: ShieldCheck,
+      path: '/rrb-staff-nurse-eligibility',
+      desc: 'Age & Qualification',
       color: 'bg-green-50 text-green-600'
     },
-    { 
-      title: 'Syllabus', 
-      icon: FileText, 
+    {
+      title: 'Syllabus',
+      icon: FileText,
       path: '/rrb-staff-nurse-syllabus',
       desc: 'Latest Pattern',
       color: 'bg-purple-50 text-purple-600'
@@ -37,8 +37,8 @@ export default function FeatureGrid() {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8">
       {features.map((item, index) => (
-        <Link 
-          key={index} 
+        <Link
+          key={index}
           to={item.path}
           className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-rrb-red transition-all group no-underline text-center flex flex-col items-center"
         >

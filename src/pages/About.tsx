@@ -35,7 +35,7 @@ export default function About() {
           <ul className="list-disc pl-5 space-y-2">
             <li><strong>Instant Updates:</strong> Real-time alerts on Notification releases, Exam Dates, and Results.</li>
             <li><strong>Simplified Data:</strong> Complex eligibility criteria and syllabus breakdowns presented in clean tables.</li>
-            <li><strong>Archive Access:</strong> A repository of previous year cut-offs and question trends.</li>
+            <li><strong>Archive Access:</strong> A repository of previous year question trends and exam insights.</li>
             <li><strong>Expert Guidance:</strong> Strategic advice on how to tackle the 70:30 syllabus split effectively.</li>
           </ul>
 
@@ -47,7 +47,7 @@ export default function About() {
           <div className="bg-red-50 p-6 rounded-lg border border-red-100 mt-8">
             <h3 className="text-lg font-bold text-rrb-red mt-0">Disclaimer</h3>
             <p className="mb-0 text-sm leading-relaxed">
-              rrbstaffnurse.in is neither associated with Indian Railways nor with Railway Recruitment Board (RRB). The Official website of RRB Application is rrbapply.gov.in. rrbstaffnurse.in is a job portal sharing the Latest Vacancy Notification, Eligibility, Application Process, Exam Date of RRB Nursing Superintendent Exam Syllabus, Exam Date & Admit Cards & Results.
+              rrbstaffnurse.in is neither associated with Indian Railways nor with Railway Recruitment Board (RRB). The Official website of RRB Application is rrbapply.gov.in. rrbstaffnurse.in is a job portal sharing the Latest Vacancy Notification, Eligibility, Application Process, Exam Date of RRB Nursing Superintendent Exam Syllabus and latest updates.
             </p>
           </div>
         </div>
