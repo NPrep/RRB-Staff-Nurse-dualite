@@ -63,7 +63,7 @@ export default function FreeTests() {
           <h3 className="text-xl font-bold text-slate-900 mb-2">Want more tests?</h3>
           <p className="text-slate-600 mb-6">Get access to 30,000+ Topic-wise questions and Daily Test Series.</p>
           <a 
-            href="https://nprepnursing.com" 
+            href="https://nprep.in" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-rrb-red text-white px-8 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors no-underline"
