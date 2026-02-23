@@ -63,7 +63,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full left-0 top-full max-h-[90vh] overflow-y-auto">
+        <div className="md:hidden nprep-mobile-drawer">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link

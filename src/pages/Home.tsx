@@ -43,6 +43,16 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+      <div className="relative bg-rrb-red overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2070&auto=format&fit=crop"
+            loading="lazy"
+            alt="Indian Railways Train Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-rrb-red via-red-800 to-red-900 opacity-90 mix-blend-multiply"></div>
+        </div>
 
             <div className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 md:p-7">
               <p className="text-sm font-semibold text-rrb-red uppercase tracking-wider mb-4">CEN 03/2025 Quick Stats</p>
