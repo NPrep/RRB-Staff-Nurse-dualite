@@ -26,6 +26,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2070&auto=format&fit=crop"
+            loading="lazy"
             alt="Indian Railways Train Background"
             className="w-full h-full object-cover opacity-20"
           />
