@@ -8,12 +8,12 @@ export default function SEONursingContent() {
           
           <h2 className="text-2xl md:text-3xl font-bold mb-4">What is Nursing?</h2>
           <p>
-            Nursing is a healthcare profession focused on the care of individuals, families, and communities to maintain or improve their health and well-being. Nurses are trained to provide medical care, support, and education to patients in various settings, including hospitals, clinics, and community health organizations. Their responsibilities include monitoring patients' health, administering medications, assisting in medical procedures, providing emotional support, and educating patients and their families about health conditions and wellness practices. Nursing requires a combination of clinical knowledge, compassion, and strong communication skills to ensure the possible care for patients.
+            Nursing in Indian Railways — Railway hospitals serve millions of passengers and railway employees across India. As an RRB Staff Nurse or Nursing Superintendent, you become part of one of the world's largest employer-run healthcare systems, with hospitals in every major railway zone.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-8 mb-4">Nursing Exams 2026</h2>
           <p>
-            Nursing Exams 2026 are essential for aspiring nurses aiming to enter dedicated nursing institutions and secure nursing roles in healthcare settings. The exams are conducted for various nursing programs, including BSc Nursing, GNM, ANM, and other specialized nursing posts. Each exam assesses the candidate's knowledge in subjects such as Anatomy, Physiology, Medical-Surgical Nursing, and Obstetrics. Preparing for Nursing Exams 2026 requires a well-organized study plan, a strong grasp of the syllabus, and access to comprehensive study materials. Students can access these resources through <a href="https://nprepnursing.com" target="_blank" rel="noopener noreferrer">NPrep Online Courses</a>.
+            Nursing Exams 2026 are essential for aspiring nurses aiming to enter dedicated nursing institutions and secure nursing roles in healthcare settings. The exams are conducted for various nursing programs, including BSc Nursing, GNM, ANM, and other specialized nursing posts. Each exam assesses the candidate's knowledge in subjects such as Anatomy, Physiology, Medical-Surgical Nursing, and Obstetrics. Preparing for Nursing Exams 2026 requires a well-organized study plan, a strong grasp of the syllabus, and access to comprehensive study materials. Students can access these resources through <a href="https://nprep.in" target="_blank" rel="noopener noreferrer">NPrep Online Courses</a>.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-8 mb-4">Nursing Exam 2026 Details</h2>
@@ -46,8 +46,8 @@ export default function SEONursingContent() {
                   <td>For those aiming to become general nurses and midwives.</td>
                   <td>Maternal care, Child health, Community nursing.</td>
                 </tr>
-                <tr>
-                  <td>RRB Staff Nurse Exam 2026</td>
+                <tr className="bg-red-50/70">
+                  <td className="border-l-4 border-[#e23744] font-semibold">RRB Staff Nurse Exam 2026</td>
                   <td>Conducted by Railway Recruitment Board for Indian Railways posts.</td>
                   <td>Nursing theory, Medical-surgical nursing, Healthcare practices.</td>
                 </tr>
@@ -87,8 +87,8 @@ export default function SEONursingContent() {
                   <td>AIIMS NORCET Exam 2026</td>
                   <td>Age 18-30 years. BSc Nursing (4 years) OR GNM + 2 Years Experience. Registered with Nursing Council.</td>
                 </tr>
-                <tr>
-                  <td>RRB Staff Nurse Exam 2026</td>
+                <tr className="bg-red-50/70">
+                  <td className="border-l-4 border-[#e23744] font-semibold">RRB Staff Nurse Exam 2026</td>
                   <td>Age 20-40 years. GNM or BSc Nursing. Registered Nurse.</td>
                 </tr>
                 <tr>
@@ -151,7 +151,7 @@ export default function SEONursingContent() {
 
           <h3 className="text-xl font-bold mt-6 mb-2">AIIMS NORCET Exam 2026</h3>
           <p>
-            The AIIMS Nursing Officer Recruitment Common Eligibility Test (NORCET) is conducted annually. For the 2026 cycle, 8,000–12,000+ Nursing Officer posts are anticipated. The exam rigorously assesses candidates' knowledge of nursing practices. Prepare with <a href="https://nprepnursing.com" target="_blank" rel="noopener noreferrer">NPrep GOLD</a>.
+            The AIIMS Nursing Officer Recruitment Common Eligibility Test (NORCET) is conducted annually. For the 2026 cycle, 8,000–12,000+ Nursing Officer posts are anticipated. The exam rigorously assesses candidates' knowledge of nursing practices. Prepare with <a href="https://nprep.in" target="_blank" rel="noopener noreferrer">NPrep GOLD</a>.
           </p>
 
           <h3 className="text-xl font-bold mt-6 mb-2">DSSSB Staff Nurse Exam 2026</h3>

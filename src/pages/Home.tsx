@@ -15,13 +15,34 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="RRB Staff Nurse Exam 2025 - Notification, Syllabus & Updates"
-        description="Official portal guide for RRB Staff Nurse Exam 2025. Get latest notification updates, syllabus, eligibility, and important exam dates."
+        title="RRB Staff Nurse Exam 2026 - Notification, Syllabus & Updates"
+        description="Official portal guide for RRB Staff Nurse Exam 2026. Get latest notification updates, syllabus, eligibility, and important exam dates."
         canonicalUrl="/"
         schema={[orgSchema, webSchema]}
       />
 
       {/* Hero Section */}
+      <div className="relative overflow-hidden bg-slate-50 border-b border-slate-200">
+        <div className="absolute inset-0 z-0 opacity-30 [background-image:linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] [background-size:48px_48px]"></div>
+
+        <div className="relative z-10 py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-5 text-slate-900 tracking-tight">
+                RRB Staff Nurse Exam 2026
+              </h1>
+              <p className="text-lg text-slate-600 mb-8 max-w-xl">
+                The definitive authority hub for Indian Railways recruitment. Access complete notifications, syllabus, eligibility, and latest exam updates.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/rrb-staff-nurse-notification" className="inline-flex items-center justify-center bg-rrb-red text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors no-underline">
+                  Latest Notification
+                </Link>
+                <Link to="/free-tests" className="inline-flex items-center justify-center bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold border border-slate-300 hover:border-slate-400 transition-colors no-underline">
+                  Start Free Practice
+                </Link>
+              </div>
+            </div>
       <div className="relative bg-rrb-red overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
@@ -33,13 +54,28 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-rrb-red via-red-800 to-red-900 opacity-90 mix-blend-multiply"></div>
         </div>
 
-        <div className="relative z-10 py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white tracking-tight drop-shadow-sm">
-            RRB Staff Nurse Exam
-          </h1>
-          <p className="text-xl text-red-100 mb-0 font-medium max-w-2xl mx-auto">
-            The definitive authority hub for Indian Railways recruitment. Access complete notifications, syllabus, eligibility, and latest exam updates.
-          </p>
+            <div className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 md:p-7">
+              <p className="text-sm font-semibold text-rrb-red uppercase tracking-wider mb-4">CEN 03/2025 Quick Stats</p>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                  <span className="text-slate-600">Posts</span>
+                  <span className="font-semibold text-slate-900">200+</span>
+                </div>
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                  <span className="text-slate-600">Pay Level</span>
+                  <span className="font-semibold text-slate-900">7 (₹44,900)</span>
+                </div>
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                  <span className="text-slate-600">Exam</span>
+                  <span className="font-semibold text-slate-900">CBT Mode</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-600">Duration</span>
+                  <span className="font-semibold text-slate-900">90 minutes</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
