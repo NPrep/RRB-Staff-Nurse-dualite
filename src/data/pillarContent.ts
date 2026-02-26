@@ -39,7 +39,7 @@ export const pillarPages: Record<string, PillarPageData> = {
             rows: [
               ["Recruitment Authority", "Railway Recruitment Boards (RRB)"],
               ["Post Name", "Staff Nurse, Nursing Superintendent"],
-              ["Exam Date", "10th - 12th March 2025"],
+              ["Exam Date", "11th - 13th March 2025 (Revised as per latest official notice)"],
               ["Mode of Application", "Online"],
               ["Selection Process", "CBT (Computer Based Test) + Document Verification"],
               ["Official Website", "indianrailways.gov.in"]
@@ -63,7 +63,7 @@ export const pillarPages: Record<string, PillarPageData> = {
       faqs: [
         {
           question: "When is the RRB Staff Nurse Exam 2025?",
-          answer: "The exam is scheduled to be held from 10th - 12th March 2025."
+          answer: "As per the latest official notice, the revised exam schedule is 11th - 13th March 2025."
         },
         {
           question: "What is the age limit mentioned in the notification?",
@@ -185,22 +185,22 @@ export const pillarPages: Record<string, PillarPageData> = {
     description: "Check the latest RRB Staff Nurse Exam Date 2025. Stay updated on the latest CBT schedule and shift-wise updates.",
     h1: "RRB Staff Nurse Exam Date 2025 – CBT Schedule & Updates",
     content: {
-      intro: "The RRB Staff Nurse Exam Date is a crucial milestone for aspirants. The exam is typically conducted in multiple shifts across the country.",
+      intro: "The RRB Staff Nurse Exam Date is a crucial milestone for aspirants. As per the latest official notice, the exam schedule has been revised and will be conducted in multiple shifts across the country.",
       sections: [
         {
           heading: "Exam Schedule 2025",
-          content: "The Railway Recruitment Board has scheduled the Computer Based Test (CBT) for the following dates.",
+          content: "The Railway Recruitment Board has released a revised Computer Based Test (CBT) schedule as per the latest official notice.",
           table: {
             headers: ["Event", "Date"],
             rows: [
-              ["Exam Start Date", "10th March 2025"],
-              ["Exam End Date", "12th March 2025"]
+              ["Exam Start Date", "11th March 2025"],
+              ["Exam End Date", "13th March 2025"]
             ]
           }
         }
       ],
       faqs: [
-        { question: "When is the exam?", answer: "The exam is scheduled from 10th - 12th March 2025." },
+        { question: "When is the exam?", answer: "As per the latest official notice, the revised exam schedule is 11th - 13th March 2025." },
         { question: "Will the exam be in single shift?", answer: "No, due to the large number of applicants, it is usually conducted in multiple shifts." },
         { question: "When will the city intimation slip be released?", answer: "City intimation is usually released 10 days before the exam date." }
       ]
