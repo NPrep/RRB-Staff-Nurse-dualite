@@ -15,7 +15,7 @@ export default function FeatureGrid() {
       title: 'Exam Date',
       icon: CalendarDays,
       path: '/rrb-staff-nurse-exam-date',
-      desc: '10th - 12th March',
+      desc: '11th - 13th March (Revised)',
       color: 'bg-yellow-50 text-yellow-600'
     },
     {
