@@ -123,8 +123,7 @@ tbody tr:nth-child(even){background:var(--bg-light);}
 @keyframes nprepDrawerIn{from{transform:translateX(100%);}to{transform:translateX(0);}}
 
 @media (max-width:1023px){.hero,[class*='hero'],section[class*='hero']{min-height:auto !important;}}
-@media (min-width:1024px){.hero,[class*='hero'],section[class*='hero'],main > section:first-of-type{min-height:70vh;}}
-main > section:first-of-type{display:flex;align-items:center;}
+@media (min-width:1024px){.hero,[class*='hero'],section[class*='hero']{min-height:70vh;}}
 @media (max-width:767px){main section{padding-top:var(--section-spacing-mobile);padding-bottom:var(--section-spacing-mobile);}footer .grid{grid-template-columns:1fr !important;}}
 @media (min-width:768px) and (max-width:1023px){footer .grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}}
 @media (min-width:1024px){footer .grid{grid-template-columns:repeat(4,minmax(0,1fr)) !important;}}
