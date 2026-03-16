@@ -1,5 +1,3 @@
-// This file acts as a CMS for the static pillar pages to ensure content consistency and easy updates.
-
 export interface PillarPageData {
   slug: string;
   title: string;
@@ -9,7 +7,7 @@ export interface PillarPageData {
     intro: string;
     sections: {
       heading: string;
-      content: string | string[]; // Paragraphs or HTML string
+      content: string | string[];
       table?: {
         headers: string[];
         rows: string[][];
@@ -23,251 +21,224 @@ export interface PillarPageData {
 }
 
 export const pillarPages: Record<string, PillarPageData> = {
-  "rrb-staff-nurse-notification": {
-    slug: "/rrb-staff-nurse-notification",
-    title: "RRB Staff Nurse Notification 2025 PDF Download",
-    description: "Download RRB Staff Nurse Notification 2025 PDF. Check vacancy details, important dates, and official CEN recruitment updates for Railway Staff Nurse posts.",
-    h1: "RRB Staff Nurse Notification 2025 – Download PDF, Vacancy & Details",
+  'rrb-staff-nurse-notification': {
+    slug: '/rrb-staff-nurse-notification',
+    title: 'RRB Staff Nurse Notification 2026',
+    description: 'Latest RRB Staff Nurse Notification 2026 details including important dates, post information, and official recruitment updates.',
+    h1: 'RRB Staff Nurse Notification 2026',
     content: {
-      intro: "The Railway Recruitment Boards (RRB) release the RRB Staff Nurse Notification to recruit eligible candidates for paramedical categories in Indian Railways. This is one of the most sought-after government nursing exams in India. Candidates awaiting the CEN (Centralized Employment Notice) for Staff Nurse and Nursing Superintendent posts can find all official details here.",
+      intro: 'The Railway Recruitment Board (RRB) releases the Staff Nurse notification through a Centralized Employment Notice (CEN). Candidates should verify dates, eligibility, vacancy distribution, and application instructions only from official notices.',
       sections: [
         {
-          heading: "RRB Staff Nurse Notification 2025: Key Highlights",
-          content: "The official notification contains critical information regarding the recruitment process. Below is a summary of the expected details for the upcoming cycle.",
+          heading: 'Latest Notification Highlights',
+          content: 'Use this page as an information summary and always cross-check with the official PDF before applying.',
           table: {
-            headers: ["Particulars", "Details"],
+            headers: ['Particular', 'Details'],
             rows: [
-              ["Recruitment Authority", "Railway Recruitment Boards (RRB)"],
-              ["Post Name", "Staff Nurse, Nursing Superintendent"],
-              ["Exam Date", "11th - 13th March 2025 (Revised as per latest official notice)"],
-              ["Mode of Application", "Online"],
-              ["Selection Process", "CBT (Computer Based Test) + Document Verification"],
-              ["Official Website", "indianrailways.gov.in"]
+              ['Recruitment Body', 'Railway Recruitment Board (RRB)'],
+              ['Post', 'Staff Nurse / Nursing Superintendent (as notified)'],
+              ['Mode of Exam', 'Computer Based Test (CBT)'],
+              ['Application Mode', 'Online'],
+              ['Official Source', 'indianrailways.gov.in and regional RRB websites']
             ]
           }
-        },
+        }
+      ],
+      faqs: [
+        { question: 'Where can I download the RRB Staff Nurse notification?', answer: 'You can download it from the official Railway and regional RRB recruitment portals when released.' },
+        { question: 'Does one notification cover all regions?', answer: 'A centralized notice is issued, while vacancies are distributed region-wise.' }
+      ]
+    }
+  },
+  'rrb-staff-nurse-vacancy': {
+    slug: '/rrb-staff-nurse-vacancy',
+    title: 'RRB Staff Nurse Vacancy 2026',
+    description: 'Check expected and announced RRB Staff Nurse vacancy details with category-wise and region-wise understanding.',
+    h1: 'RRB Staff Nurse Vacancy 2026',
+    content: {
+      intro: 'RRB vacancy details are published in the official notification. Seats are usually distributed across regions and reservation categories.',
+      sections: [
         {
-          heading: "Vacancy Details for RRB Staff Nurse",
-          content: "Vacancies are distributed across various Railway Zones (RRB Mumbai, RRB Patna, RRB Chennai, etc.). The notification specifies the exact number of seats available for General, OBC, SC, ST, and EWS categories."
-        },
-        {
-          heading: "How to Download the Official Notification PDF",
+          heading: 'How Vacancy Is Reported',
           content: [
-            "1. Visit the official website: indianrailways.gov.in",
-            "2. Navigate to the 'Recruitment' section.",
-            "3. Select your respective RRB Region.",
-            "4. Click on 'CEN Paramedical Recruitment' and download the PDF."
+            'RRB provides vacancy details by region and category.',
+            'Final vacancy can be revised by the board based on administrative requirements.',
+            'Candidates should apply carefully for their preferred region as transfer policy is limited.'
           ]
         }
       ],
       faqs: [
-        {
-          question: "When is the RRB Staff Nurse Exam 2025?",
-          answer: "As per the latest official notice, the revised exam schedule is 11th - 13th March 2025."
-        },
-        {
-          question: "What is the age limit mentioned in the notification?",
-          answer: "Generally, the age limit is between 20 to 40 years, with age relaxations for reserved categories as per government rules."
-        },
-        {
-          question: "How many vacancies are expected?",
-          answer: "While the exact number is yet to be released in the CEN, expectations are high for over 200+ posts specifically for Nursing Superintendent and Staff Nurse combined."
-        },
-        {
-          question: "Is the notification released for all zones together?",
-          answer: "Yes, the Centralized Employment Notice (CEN) is released centrally, but vacancies are distributed zone-wise."
-        },
-        {
-          question: "Where can I find the official syllabus?",
-          answer: "The official syllabus is included in the notification PDF. You can also view the detailed syllabus on our Syllabus page."
-        }
+        { question: 'Are vacancies same every year?', answer: 'No. Vacancy count depends on staffing requirements in railway hospitals and units.' },
+        { question: 'Can vacancy numbers change after notification?', answer: 'Yes, RRB may revise numbers depending on official needs.' }
       ]
     }
   },
-  "rrb-staff-nurse-syllabus": {
-    slug: "/rrb-staff-nurse-syllabus",
-    title: "RRB Staff Nurse Syllabus 2025 & Exam Pattern",
-    description: "Detailed RRB Staff Nurse Syllabus 2025 and Exam Pattern. Topic-wise breakdown for Professional Ability, General Science, Arithmetic, and General Awareness.",
-    h1: "RRB Staff Nurse Syllabus 2025 & Exam Pattern (Subject Wise)",
+  'rrb-staff-nurse-eligibility': {
+    slug: '/rrb-staff-nurse-eligibility',
+    title: 'RRB Staff Nurse Eligibility 2026',
+    description: 'RRB Staff Nurse Eligibility 2026 including qualification, age criteria, nationality, medical standards, and required documents.',
+    h1: 'RRB Staff Nurse Eligibility 2026',
     content: {
-      intro: "To crack the RRB Staff Nurse exam, a thorough understanding of the syllabus is mandatory. The exam primarily tests Professional Nursing Ability, along with General Awareness, Arithmetic, and General Science. A strategic approach to these topics is essential for securing a high rank.",
+      intro: 'Before applying, candidates must satisfy educational, age, nationality, and medical conditions mentioned in the official recruitment notice.',
+      sections: [
+        { heading: 'Educational Qualification', content: 'Candidates are generally required to hold BSc Nursing or GNM with valid nursing council registration as specified in the notification.' },
+        { heading: 'Age Limit', content: 'The usual age bracket is announced in the notification and may include upper-age relaxation for reserved categories according to government norms.' },
+        { heading: 'Nationality Requirements', content: 'Applicants must satisfy nationality criteria prescribed for central government recruitment examinations.' },
+        { heading: 'Medical Standards', content: 'Candidates must meet medical fitness standards applicable for railway medical staff posts.' },
+        { heading: 'Reservation Rules', content: 'Age and category benefits are applied as per prevailing reservation guidelines and submitted certificates.' },
+        { heading: 'Important Documents Required', content: ['Educational certificates', 'Nursing registration proof', 'Category certificate (if applicable)', 'Identity proof and date of birth certificate'] }
+      ],
+      faqs: [
+        { question: 'Is GNM eligible for RRB Staff Nurse?', answer: 'Yes, GNM candidates with valid registration are generally eligible when allowed in the notification.' },
+        { question: 'Is registration mandatory?', answer: 'Yes, nursing council registration is typically mandatory.' }
+      ]
+    }
+  },
+  'rrb-staff-nurse-age-limit': {
+    slug: '/rrb-staff-nurse-age-limit',
+    title: 'RRB Staff Nurse Age Limit 2026',
+    description: 'Understand RRB Staff Nurse age limit, category relaxation, and age calculation rules for 2026 recruitment.',
+    h1: 'RRB Staff Nurse Age Limit 2026',
+    content: {
+      intro: 'RRB publishes minimum and maximum age criteria in the notification along with category-wise relaxations.',
       sections: [
         {
-          heading: "RRB Staff Nurse Exam Pattern 2025",
-          content: "The examination is a Computer Based Test (CBT) with multiple-choice questions. There is negative marking for incorrect answers.",
+          heading: 'Age Relaxation Overview',
+          content: 'Reserved category candidates are generally eligible for age relaxation as per central government recruitment policy.',
           table: {
-            headers: ["Subject", "No. of Questions", "Marks"],
+            headers: ['Category', 'Typical Relaxation'],
+            rows: [['OBC', 'Up to 3 years'], ['SC/ST', 'Up to 5 years'], ['PwBD and others', 'As per notification rules']]
+          }
+        }
+      ],
+      faqs: [
+        { question: 'How is age calculated?', answer: 'Age is calculated based on the cut-off date specified in the recruitment notification.' }
+      ]
+    }
+  },
+  'rrb-staff-nurse-exam-pattern': {
+    slug: '/rrb-staff-nurse-exam-pattern',
+    title: 'RRB Staff Nurse Exam Pattern 2026',
+    description: 'RRB Staff Nurse Exam Pattern 2026 with CBT format, total questions, duration, negative marking, and subject overview.',
+    h1: 'RRB Staff Nurse Exam Pattern 2026',
+    content: {
+      intro: 'The Railway Recruitment Board conducts a Computer Based Test (CBT) for staff nurse recruitment.',
+      sections: [
+        {
+          heading: 'RRB Staff Nurse Exam Pattern',
+          content: 'The exam is objective in nature and evaluates both nursing and general aptitude areas.',
+          table: {
+            headers: ['Parameter', 'Details'],
             rows: [
-              ["Professional Ability (Nursing)", "70", "70"],
-              ["General Awareness", "10", "10"],
-              ["General Arithmetic, General Intelligence & Reasoning", "10", "10"],
-              ["General Science", "10", "10"],
-              ["Total", "100", "100"]
+              ['Exam mode', 'Online (CBT)'],
+              ['Total questions', '100'],
+              ['Exam duration', '90 minutes'],
+              ['Negative marking', '1/3rd mark deduction for each wrong answer']
             ]
           }
         },
         {
-          heading: "Detailed Syllabus: Professional Ability",
-          content: "This section carries the maximum weightage (70 marks). Topics include Anatomy, Physiology, Nutrition, Biochemistry, Nursing Foundations, Medical-Surgical Nursing, Midwifery, Child Health Nursing, Community Health Nursing, and Mental Health Nursing. For comprehensive study material, many aspirants rely on <a href='https://nprep.in' target='_blank' rel='noopener noreferrer'>NPrep</a>."
-        },
-        {
-          heading: "General Awareness & Science Syllabus",
-          content: "Focus on Current Affairs, Indian Geography, History, Physics, Chemistry, and Life Sciences (Standard 10th level)."
+          heading: 'Subjects Included',
+          content: ['Professional Nursing', 'General Awareness', 'General Arithmetic', 'General Intelligence']
         }
       ],
       faqs: [
-        {
-          question: "Is there negative marking in the RRB Staff Nurse exam?",
-          answer: "Yes, 1/3rd of the marks allotted for each question are deducted for every wrong answer."
-        },
-        {
-          question: "What is the duration of the exam?",
-          answer: "The exam duration is typically 90 minutes."
-        },
-        {
-          question: "Which subject has the highest weightage?",
-          answer: "Professional Ability (Nursing) has the highest weightage with 70 marks out of 100."
-        },
-        {
-          question: "Is Mathematics part of the syllabus?",
-          answer: "Yes, General Arithmetic is part of the 10-mark section combined with General Intelligence & Reasoning."
-        }
+        { question: 'Is there negative marking in RRB Staff Nurse CBT?', answer: 'Yes, one-third mark is deducted for each incorrect answer.' }
       ]
     }
   },
-  "rrb-staff-nurse-eligibility": {
-    slug: "/rrb-staff-nurse-eligibility",
-    title: "RRB Staff Nurse Eligibility Criteria 2025: Age, Qualification",
-    description: "Check RRB Staff Nurse Eligibility Criteria 2025. Know the Age Limit, Educational Qualification (GNM/B.Sc Nursing), and Medical Standards required.",
-    h1: "RRB Staff Nurse Eligibility Criteria 2025 – Age Limit & Qualification",
+  'rrb-staff-nurse-salary': {
+    slug: '/rrb-staff-nurse-salary',
+    title: 'RRB Staff Nurse Salary',
+    description: 'RRB Staff Nurse salary structure with Level 7 pay scale, basic pay, and major allowances.',
+    h1: 'RRB Staff Nurse Salary',
     content: {
-      intro: "Before applying, candidates must ensure they meet the specific eligibility criteria set by the Railway Recruitment Boards. Ineligibility at any stage leads to immediate disqualification.",
+      intro: 'Railway staff nurses are generally placed under Level 7 pay structure with additional government allowances.',
       sections: [
         {
-          heading: "Educational Qualification",
-          content: "Candidates must possess:",
+          heading: 'Salary Structure',
+          content: 'Basic salary starts at ₹44,900 with admissible allowances.',
           table: {
-            headers: ["Requirement", "Details"],
-            rows: [
-              ["Basic Qualification", "Certificate as Registered Nurse and Midwife having passed 3 years course in General Nursing and Midwifery (GNM) from a school of Nursing or other institution recognized by the Indian Nursing Council."],
-              ["Alternative Qualification", "B.Sc. (Nursing) from a recognized university/institution."]
-            ]
-          }
-        },
-        {
-          heading: "Age Limit",
-          content: "The standard age limit is usually 20 to 40 years. However, age relaxation is applicable for SC/ST (5 years), OBC-NCL (3 years), and PwBD candidates as per government norms."
-        }
-      ],
-      faqs: [
-        {
-          question: "Can final year nursing students apply?",
-          answer: "No, candidates must have the final degree/diploma certificate and registration certificate on the closing date of the application."
-        },
-        {
-          question: "Is experience required for RRB Staff Nurse?",
-          answer: "Generally, experience is not mandatory for the Staff Nurse post, but it may be required for higher posts like Nursing Superintendent."
-        },
-        {
-          question: "Is GNM eligible for RRB Staff Nurse?",
-          answer: "Yes, GNM candidates who are registered as Nurse and Midwife are eligible."
-        },
-        {
-          question: "What is the upper age limit for OBC candidates?",
-          answer: "OBC candidates typically get a 3-year relaxation, making the upper age limit 43 years (if base is 40)."
-        }
-      ]
-    }
-  },
-  "rrb-staff-nurse-exam-date": {
-    slug: "/rrb-staff-nurse-exam-date",
-    title: "RRB Staff Nurse Exam Date 2025",
-    description: "Check the latest RRB Staff Nurse Exam Date 2025. Stay updated on the latest CBT schedule and shift-wise updates.",
-    h1: "RRB Staff Nurse Exam Date 2025 – CBT Schedule & Updates",
-    content: {
-      intro: "The RRB Staff Nurse Exam Date is a crucial milestone for aspirants. As per the latest official notice, the exam schedule has been revised and will be conducted in multiple shifts across the country.",
-      sections: [
-        {
-          heading: "Exam Schedule 2025",
-          content: "The Railway Recruitment Board has released a revised Computer Based Test (CBT) schedule as per the latest official notice.",
-          table: {
-            headers: ["Event", "Date"],
-            rows: [
-              ["Exam Start Date", "11th March 2025"],
-              ["Exam End Date", "13th March 2025"]
-            ]
+            headers: ['Component', 'Details'],
+            rows: [['Pay Level', 'Level 7'], ['Basic Salary', '₹44,900'], ['Allowances', 'DA, HRA, Transport Allowance, Medical Benefits']]
           }
         }
       ],
       faqs: [
-        { question: "When is the exam?", answer: "As per the latest official notice, the revised exam schedule is 11th - 13th March 2025." },
-        { question: "Will the exam be in single shift?", answer: "No, due to the large number of applicants, it is usually conducted in multiple shifts." },
-        { question: "When will the city intimation slip be released?", answer: "City intimation is usually released 10 days before the exam date." }
+        { question: 'What is the basic pay of RRB Staff Nurse?', answer: 'The basic salary is generally ₹44,900 under Level 7.' }
       ]
     }
   },
-  "rrb-staff-nurse-application-form": {
-    slug: "/rrb-staff-nurse-application-form",
-    title: "RRB Staff Nurse Application Form 2025 - Apply Online",
-    description: "Step-by-step guide to fill RRB Staff Nurse Application Form 2025. Fee details, document requirements, and direct apply link.",
-    h1: "RRB Staff Nurse Application Form 2025 – Online Registration Steps",
+  'rrb-staff-nurse-selection-process': {
+    slug: '/rrb-staff-nurse-selection-process',
+    title: 'RRB Staff Nurse Selection Process',
+    description: 'Know the RRB Staff Nurse selection stages including CBT, document verification, and medical examination.',
+    h1: 'RRB Staff Nurse Selection Process',
     content: {
-      intro: "The application process for RRB Staff Nurse is entirely online. Candidates must register through the official RRB regional websites or the central application portal.",
+      intro: 'Candidates are shortlisted and selected through clearly defined stages announced in the official notification.',
       sections: [
         {
-          heading: "How to Apply",
-          content: [
-            "1. Go to the official application portal: rrbapply.gov.in",
-            "2. Register with your Mobile Number and Email ID.",
-            "3. Fill in the detailed application form.",
-            "4. Upload scanned photograph and signature.",
-            "5. Pay the application fee."
-          ]
-        },
-        {
-          heading: "Application Fee",
-          content: "Fee details are generally Rs. 500 for General/OBC and Rs. 250 for SC/ST/Ex-Servicemen/Female/Minorities/EBC.",
-          table: {
-            headers: ["Category", "Fee"],
-            rows: [["General/OBC", "Rs. 500"], ["SC/ST/PwBD/Female", "Rs. 250"]]
-          }
+          heading: 'Selection Stages',
+          content: ['1. Computer Based Test (CBT)', '2. Document Verification', '3. Medical Examination', 'Candidates must qualify each stage to be considered for final appointment.']
         }
       ],
       faqs: [
-        { question: "Can I apply to multiple RRBs?", answer: "No, you can only apply to one RRB for a specific post." },
-        { question: "Is the application fee refundable?", answer: "For candidates appearing in the CBT, a portion of the fee is refunded (Rs. 400 for Gen/OBC, Rs. 250 for others) after bank charges deduction." },
-        { question: "Can I modify my application after submission?", answer: "Yes, a modification window is usually provided with a fee of Rs. 250, but only for specific fields." }
+        { question: 'Is there an interview in RRB Staff Nurse recruitment?', answer: 'Typically, selection is based on CBT followed by verification and medical fitness, as notified.' }
       ]
     }
   },
-
-  "rrb-staff-nurse-result": {
-    slug: "/rrb-staff-nurse-result",
-    title: "RRB Staff Nurse Result 2025 - Merit List",
-    description: "Check RRB Staff Nurse Result 2025. Download Merit List PDF and score card for the computer-based test.",
-    h1: "RRB Staff Nurse Result 2025 – Merit List & Score Card",
+  'rrb-staff-nurse-application-process': {
+    slug: '/rrb-staff-nurse-application-process',
+    title: 'RRB Staff Nurse Application Process',
+    description: 'Step-by-step RRB Staff Nurse application process including registration, form filling, upload, and fee payment.',
+    h1: 'RRB Staff Nurse Application Process',
     content: {
-      intro: "Results are published on official RRB websites as a PDF of roll numbers of shortlisted candidates.",
-      sections: [{ heading: "After Result", content: "Shortlisted candidates are called for Document Verification and Medical Examination." }],
+      intro: 'The RRB Staff Nurse application process is completed online through official recruitment portals.',
+      sections: [
+        {
+          heading: 'How to Apply Online',
+          content: ['Register with valid mobile number and email ID.', 'Complete personal and educational details carefully.', 'Upload required documents in prescribed format.', 'Pay application fee and keep a copy of confirmation page.']
+        }
+      ],
       faqs: [
-        { question: "How to check result?", answer: "Download the PDF from the official site (indianrailways.gov.in) and search for your roll number." },
-        { question: "Is there a waiting list?", answer: "Yes, RRBs often maintain a standby list for candidates." },
-        { question: "What is the next stage after CBT result?", answer: "Document Verification (DV) followed by Medical Examination." }
+        { question: 'Can I edit application form after final submission?', answer: 'RRB may provide a correction window for specific fields as per official instructions.' }
       ]
     }
   },
-  "rrb-nursing-superintendent-recruitment": {
-    slug: "/rrb-nursing-superintendent-recruitment",
-    title: "RRB Nursing Superintendent Recruitment 2025",
-    description: "RRB Nursing Superintendent Recruitment 2025 details. Eligibility, pay scale, and exam process for senior nursing posts in Railways.",
-    h1: "RRB Nursing Superintendent Recruitment 2025",
+  'rrb-staff-nurse-admit-card': {
+    slug: '/rrb-staff-nurse-admit-card',
+    title: 'RRB Staff Nurse Admit Card',
+    description: 'Get updates on RRB Staff Nurse admit card release, download steps, and exam day instructions.',
+    h1: 'RRB Staff Nurse Admit Card',
     content: {
-      intro: "Nursing Superintendent is a senior-level post in Indian Railways with higher responsibilities and pay scale compared to Staff Nurse.",
-      sections: [{ heading: "Eligibility Difference", content: "Usually requires extensive experience along with B.Sc Nursing/M.Sc Nursing." }],
+      intro: 'Admit card download links are released on official regional RRB websites before the CBT.',
+      sections: [
+        {
+          heading: 'How to Download Admit Card',
+          content: ['Visit your regional RRB website.', 'Open the admit card login link.', 'Enter registration credentials and download the hall ticket.', 'Verify details such as exam date, shift, and reporting time.']
+        }
+      ],
       faqs: [
-        { question: "Is the exam same as Staff Nurse?", answer: "The syllabus is similar but the difficulty level and competition may vary." },
-        { question: "What is the Pay Level?", answer: "Nursing Superintendent is typically a Level-7 or higher post depending on the exact grade." },
-        { question: "Can freshers apply?", answer: "Usually, this post requires experience. Freshers are eligible for Staff Nurse posts." }
+        { question: 'When is admit card usually released?', answer: 'It is generally issued a few days before the exam date as per official schedule.' }
+      ]
+    }
+  },
+  'rrb-staff-nurse-faq': {
+    slug: '/rrb-staff-nurse-faq',
+    title: 'RRB Staff Nurse FAQ',
+    description: 'Frequently asked questions on RRB Staff Nurse qualification, recruitment cycle, eligibility, and exam process.',
+    h1: 'RRB Staff Nurse FAQ',
+    content: {
+      intro: 'This FAQ page answers common queries about RRB Staff Nurse recruitment and official process-related details.',
+      sections: [
+        {
+          heading: 'Common Questions',
+          content: ['What is the qualification for RRB staff nurse?', 'Candidates must have BSc Nursing or GNM with registration.', 'Is RRB staff nurse exam conducted yearly?', 'Recruitment depends on vacancy notifications released by RRB.']
+        }
+      ],
+      faqs: [
+        { question: 'What is the qualification for RRB staff nurse?', answer: 'Candidates must have BSc Nursing or GNM with valid registration.' },
+        { question: 'Is RRB staff nurse exam conducted yearly?', answer: 'Recruitment frequency depends on vacancy notifications released by the Railway Recruitment Board.' }
       ]
     }
   }
