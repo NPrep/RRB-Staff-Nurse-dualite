@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import NPrepCTA from './NPrepCTA';
 
 export default function Layout() {
   return (
@@ -10,6 +11,7 @@ export default function Layout() {
       <main id="main-content" className="flex-grow">
         <Outlet />
       </main>
+      <NPrepCTA />
       <Footer />
     </div>
   );
