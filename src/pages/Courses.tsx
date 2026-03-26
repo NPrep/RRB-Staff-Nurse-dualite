@@ -137,7 +137,7 @@ export default function Courses() {
             <a href="/contact" className="inline-block bg-white text-slate-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
               Contact Support
             </a>
-            <a href="tel:+916377639169" className="inline-block bg-transparent border border-slate-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-slate-800 transition-colors">
+            <a href="tel:+916377639169" className="inline-block bg-white text-slate-900 px-8 py-3 rounded-lg font-bold hover:bg-slate-100 transition-colors shadow-lg">
               Helpline: +91 6377 6391 69
             </a>
           </div>

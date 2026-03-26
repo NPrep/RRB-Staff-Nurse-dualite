@@ -34,7 +34,12 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold text-slate-900">Helpline Number</h3>
                 <p className="text-slate-600 text-sm mb-1">Student Guidance & Support:</p>
-                <a href="tel:+916377639169" className="text-rrb-red font-bold text-lg hover:underline">+91 6377 6391 69</a>
+                <a
+                  href="tel:+916377639169"
+                  className="inline-flex items-center rounded-full bg-red-50 px-3 py-1.5 text-lg font-bold text-rrb-red ring-1 ring-red-200 transition-colors hover:bg-red-100"
+                >
+                  +91 6377 6391 69
+                </a>
               </div>
             </div>
 
